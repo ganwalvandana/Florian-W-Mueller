@@ -1,8 +1,8 @@
 body {
     background-image: url(images/animals-birds-parrot-wallpaper-preview.jpg);
     background-size: cover;
-    cursor: all-scroll;
-    
+    /* cursor: url('images/pngtree-brush-circle-creative-brush-effect-png-image_6020152.jpg'),auto; */
+    /* pointer-events: none; */
 }
 #header {
     position: fixed;
@@ -15,6 +15,10 @@ body {
     padding: 50px 0px 0px 90px;
     position: sticky;
 }
+/* button{
+    border: none;
+    
+} */
 
 #bar {
     /* height: 70px; */
@@ -52,6 +56,7 @@ a {
 .insta {
     padding-top: 100px;
     padding-bottom: 100px;
+    /* transition: 0.1s; */
 }
 
 #footer {
@@ -76,10 +81,11 @@ a {
     
 } */
 
+
 .reverse:hover {
     /* display: inline; */
     transform: scale(-1, 1);
-    font-size: 120px;
+    /* font-size: 120px; */
     font-weight: bolder;
     /* -moz-transform: scale(-1, 1);
     -webkit-transform: scale(-1, 1);
@@ -95,4 +101,32 @@ a {
 }
 .bi {
     padding-left: 8px;
+}
+
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    transition: 0.1s;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
+
+#logo:hover ~ .cursor {
+    transform: scale(6);
+
+}
+.bi:hover ~.cursor{
+    transform: scale(4);
+}
+.copyright:hover ~ .cursor{
+    transform: scale(6);
+}
+#bar:hover ~.cursor{
+    /* transform: scale(6); */
+    width: 50px;
+    height: 50px;
 }

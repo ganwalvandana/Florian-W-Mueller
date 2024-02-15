@@ -25,6 +25,7 @@
             <!-- <i class="fa-solid fa-bars"></i> -->
             <!-- <i id="bar" class="bi bi-list"></i> -->
         </div>
+        <div class="cursor"></div>
     </header>
     <div id="section1">
         <h1 >
@@ -67,4 +68,28 @@
         </div>
     </footer>
 </body>
+
+<script>
+    const body = document.getElementsByTagName("body");
+    const logo = document.getElementById("logo");
+    const cursor = document.querySelector('.cursor');
+
+    document.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.pageX + 'px';
+        cursor.style.top = e.pageY + 'px';
+        // cursor.style.right = e.pageY + 'py';
+
+
+    })
+
+    
+
+
+    logo.addEventListener("click",() => {
+        // body[0].style.backgroundImage = url(images/images.jpeg) "src = 'images/images.jpeg'"
+    });
+    // body.onmousemove = () => {
+
+    // }
+</script>
 </html>
