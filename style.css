@@ -1,0 +1,98 @@
+body {
+    background-image: url(images/animals-birds-parrot-wallpaper-preview.jpg);
+    background-size: cover;
+    cursor: all-scroll;
+    
+}
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+} 
+
+#logo {
+    height: 100px;
+    padding: 50px 0px 0px 90px;
+    position: sticky;
+}
+
+#bar {
+    /* height: 70px; */
+    float: right;
+    padding: 50px 90px 0px 0px;
+    /* color: white; */
+}
+
+#section1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 40px;
+    margin-top: 300px;
+    padding: 0px 150px;
+    font-family: "Ultra" "Anton" , sans-serif;
+}
+
+span {
+    display: block;
+    width: fit-content;
+    padding-top: 20px;
+}
+
+/* .br {
+    display: inline-flex;
+    margin-bottom: 0em;
+} */
+
+a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.insta {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#footer {
+    color: white;
+    background-color: rgb(5, 9, 14);
+    /* padding: 20px 100px 20px 100px; */
+    padding-top: 50px;
+    width: 100%;
+    /* position: fixed; */
+    /* left: 0;
+    bottom: 0; */
+    display: flex;
+    justify-content: space-between;
+  
+}
+.copyright {
+    padding-left: 50px;
+}
+
+/* .reverse {
+    display: inline-block;
+    
+} */
+
+.reverse:hover {
+    /* display: inline; */
+    transform: scale(-1, 1);
+    font-size: 120px;
+    font-weight: bolder;
+    /* -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1); */
+}
+
+.icons {
+    /* float: left; */
+    padding-right: 140px; 
+    padding: 40px;
+}
+.bi {
+    padding-left: 8px;
+}
