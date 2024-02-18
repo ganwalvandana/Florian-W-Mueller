@@ -1,13 +1,16 @@
 body {
-    background-image: url(images/animals-birds-parrot-wallpaper-preview.jpg);
+    /* background-image: url(images/bg1.jpg); */
     background-size: cover;
+    /* width: 100%; */
     /* cursor: url('images/pngtree-brush-circle-creative-brush-effect-png-image_6020152.jpg'),auto; */
     /* pointer-events: none; */
+    
 }
 #header {
     position: fixed;
     top: 0;
     width: 100%;
+    mix-blend-mode: difference;
 } 
 
 #logo {
@@ -24,22 +27,29 @@ body {
     /* height: 70px; */
     float: right;
     padding: 50px 90px 0px 0px;
+    mix-blend-mode: difference;
     /* color: white; */
+}
+
+@font-face {
+    font-family: 'Gnasher';
+    src: url(font/YRTGnasher.woff2);
 }
 
 #section1 {
     text-transform: uppercase;
     color: white;
-    font-size: 40px;
+    font-size: 50px;
+    /* line-height: 120px; */
     margin-top: 300px;
-    padding: 0px 150px;
-    font-family: "Ultra" "Anton" , sans-serif;
+    padding: 0px 100px;
+    font-family: 'Gnasher';
 }
-
-span {
+.br {
     display: block;
     width: fit-content;
     padding-top: 20px;
+    mix-blend-mode: difference;
 }
 
 /* .br {
@@ -87,6 +97,7 @@ a {
     transform: scale(-1, 1);
     /* font-size: 120px; */
     font-weight: bolder;
+    mix-blend-mode: difference;
     /* -moz-transform: scale(-1, 1);
     -webkit-transform: scale(-1, 1);
     -o-transform: scale(-1, 1);
@@ -103,30 +114,49 @@ a {
     padding-left: 8px;
 }
 
-.cursor {
+#cursor {
     position: fixed;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #fff;
+    /* border: 2px solid white; */
+    background: #ffffff;
     transition: 0.1s;
     transform: translate(-50%, -50%);
     pointer-events: none;
     mix-blend-mode: difference;
+    display: none;
 }
 
-#logo:hover ~ .cursor {
+body:has(a:hover) #cursor {
+    transform: scale(5);
+}
+
+/* body:has(.br:hover) #cursor{
+    mix-blend-mode: difference;
+    transform: scale(-1, 1);
+
     transform: scale(6);
+} */
 
-}
-.bi:hover ~.cursor{
+/* #logo:hover ~ .cursor {
     transform: scale(4);
 }
+#header:hover ~.cursor {
+    transform: scale(4);
+}
+#footer:hover ~.cursor {
+    transform: scale(4);
+}
+
+#bar:hover ~ .cursor {
+    transform: scale(4);
+} */
+
+
+/* .bi:hover ~.cursor{
+    transform: scale(4);
+} 
 .copyright:hover ~ .cursor{
     transform: scale(6);
-}
-#bar:hover ~.cursor{
-    /* transform: scale(6); */
-    width: 50px;
-    height: 50px;
-}
+} */

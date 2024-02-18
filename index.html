@@ -12,30 +12,33 @@
     <title>CSS1</title>
 </head>
 <body>
+    <div id="cursor"></div>
     <header id="header">
         <div class="navbar">
-            <img id="logo" src="https://florianwmueller.com/wp-content/uploads/2022/06/Enso_4-light.png" class="grve-light" alt="Florian W. Mueller - Photography" decoding="async" srcset="https://florianwmueller.com/wp-content/uploads/2022/06/Enso_4-light.png 500w, https://florianwmueller.com/wp-content/uploads/2022/06/Enso_4-light-300x300.png 300w, https://florianwmueller.com/wp-content/uploads/2022/06/Enso_4-light-150x150.png 150w" sizes="(max-width: 500px) 100vw, 500px">
+           <a href=""><img id="logo" src="https://florianwmueller.com/wp-content/uploads/2022/06/Enso_4-light.png" class="grve-light" alt="Florian W. Mueller - Photography" decoding="async" srcset="https://florianwmueller.com/wp-content/uploads/2022/06/Enso_4-light.png 500w, https://florianwmueller.com/wp-content/uploads/2022/06/Enso_4-light-300x300.png 300w, https://florianwmueller.com/wp-content/uploads/2022/06/Enso_4-light-150x150.png 150w" sizes="(max-width: 500px) 100vw, 500px"></a> 
         <!-- </div>
         <div> -->
-            <a href="https://florianwmueller.com/"><svg id="bar" width="40px" height="40px" viewBox="0 0 24 24" style="stroke:white" stroke-width="2">
-				<path d="M24,17 L24,19 L9,19 L9,17 L24,17 Z M24,11 L24,13 L0,13 L0,11 L24,11 Z M24,5 L24,7 L9,7 L9,5 L24,5 Z"></path>
-			</svg></a>
+            <a href="https://florianwmueller.com/">
+                <svg id="bar" width="40px" height="40px" viewBox="0 0 24 24" style="stroke:white" stroke-width="2">
+                    <path d="M24,17 L24,19 L9,19 L9,17 L24,17 Z M24,11 L24,13 L0,13 L0,11 L24,11 Z M24,5 L24,7 L9,7 L9,5 L24,5 Z"></path>
+                </svg>
+            </a>
             
             <!-- <img id="bar" src="images/menu.png" alt="Bar"> -->
             <!-- <i class="fa-solid fa-bars"></i> -->
             <!-- <i id="bar" class="bi bi-list"></i> -->
         </div>
-        <div class="cursor"></div>
     </header>
     <div id="section1">
         <h1 >
+            
             <!-- <span class="br reverse">Work</span>
-            <span class="br reverse">Profile</span>
-            <span class="br reverse">Diary</span> -->
-            <a  href="https://florianwmueller.com/work/"> <span class="br reverse">Work</span></a>
-            <a  href="https://florianwmueller.com/about/"> <span class="br reverse">Profile</span></a>
-            <a  href="https://florianwmueller.com/diary/"> <span class="br reverse">Diary</span></a>
-            <a target="_blank" href="https://www.instagram.com/florianwmueller/"> <span class="br reverse insta">Instagram</span></a>
+                <span class="br reverse">Profile</span>
+                <span class="br reverse">Diary</span> -->
+            <a  href="https://florianwmueller.com/work/" class="br reverse">Work</a>
+            <a  href="https://florianwmueller.com/about/" class="br reverse">Profile</a>
+            <a  href="https://florianwmueller.com/diary/"class="br reverse">Diary</a>
+            <a target="_blank" href="https://www.instagram.com/florianwmueller/"class="br reverse insta">Instagram</a>
         </h1>
         <!-- <h1 class="reverse"> Work</h1> <br>
         <h1 class="reverse">Profile</h1><br>
@@ -69,27 +72,6 @@
     </footer>
 </body>
 
-<script>
-    const body = document.getElementsByTagName("body");
-    const logo = document.getElementById("logo");
-    const cursor = document.querySelector('.cursor');
+<script src="script.js"></script>
 
-    document.addEventListener("mousemove", (e) => {
-        cursor.style.left = e.pageX + 'px';
-        cursor.style.top = e.pageY + 'px';
-        // cursor.style.right = e.pageY + 'py';
-
-
-    })
-
-    
-
-
-    logo.addEventListener("click",() => {
-        // body[0].style.backgroundImage = url(images/images.jpeg) "src = 'images/images.jpeg'"
-    });
-    // body.onmousemove = () => {
-
-    // }
-</script>
 </html>
